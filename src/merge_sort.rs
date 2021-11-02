@@ -33,16 +33,3 @@ fn merge(left: &[u8], right: &[u8]) -> Vec<u8> {
 
     temp
 }
-
-#[cfg(test)]
-mod tests {
-    use crate::merge_sort;
-
-    #[test]
-    fn it_works() {
-        let mut array = [8, 1, 10, 2, 3];
-        merge_sort(&mut array);
-
-        assert_eq!(array, [1, 2, 3, 8, 10]);
-    }
-}
