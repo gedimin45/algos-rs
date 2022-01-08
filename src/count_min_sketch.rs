@@ -25,7 +25,7 @@ impl CountMinSketch<2> {
 fn hash1(input: &str) -> i32 {
     let mut res = 0;
     for byte in input.as_bytes() {
-        res = (res + byte) % 10;
+        res = res + byte;
     }
 
     (res % 10) as i32
