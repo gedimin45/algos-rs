@@ -1,5 +1,6 @@
 mod merge_sort;
 mod quick_sort;
+mod count_min_sketch;
 
 use merge_sort::merge_sort;
 use quick_sort::quick_sort;
